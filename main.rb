@@ -19,7 +19,7 @@ class Ticket
 end
 
 puts "My ticket"
-myTicket = Ticket.new([23,12,42,2,24],[2,8])
+myTicket = Ticket.new([2,15,22,23,32],[3,7])
 myTicket.showTicket()
 
 def addNumbers(times, maxNum)
@@ -29,7 +29,7 @@ def addNumbers(times, maxNum)
     randNum = rand(1...maxNum)
 
     if numbers.include? randNum
-      break
+      nil
     else
       numbers << randNum
     end
