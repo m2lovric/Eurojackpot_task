@@ -46,11 +46,7 @@ def newTicket
 end
 
 def checkNums(myTicket, ticket)
-  if (myTicket.mainNumbers.sort == ticket.mainNumbers.sort && myTicket.bonusNumbers.sort == ticket.bonusNumbers.sort)
-    return true
-  else 
-    return false
-  end
+  myTicket.mainNumbers.sort == ticket.mainNumbers.sort && myTicket.bonusNumbers.sort == ticket.bonusNumbers.sort
 end
 
 def getEurojackpot(myTicket)
